@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans     
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+      <bean id="bean" class="com.xworkz.lemon.dto.LemonBean">
+    
+      <property name="mantravadiName" value="Pavansir"></property>
+		<property name="location" value="Nelamangala"></property>
+		<property name="nums">
+			<array>
+				<value>1</value>
+				<value>8</value>
+			</array>
+		</property>
+		<property name="manthravaadis">
+			<list>
+				<value>Nikunjj</value>
+				<value>Aksharasir</value>
+				<value>Vinaysir</value>
+			</list>
+		</property>
+
+		<property name="magicians">
+			<map>
+				<entry key="Nelamangala" value="Pavansir" />
+				<entry key="Gujarath" value="Nikunjj" />
+				<entry key="Hubli" value="Vinaysir" />
+				<entry key="Shimoga" value="Aksharasir" />
+			</map>
+		</property>
+
+		<property name="mantravettas">
+			<props>
+				<prop key="Nelamangala">Pavansir</prop>
+				<prop key="Gujarath">Nikunjj</prop>
+				<prop key="Shimoga">Aksharasir</prop>
+				<prop key="Hubli">Vinaysir</prop>
+			</props>
+			</property>
+    </bean>
+
+   </beans>
